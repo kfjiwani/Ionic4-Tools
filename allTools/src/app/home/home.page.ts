@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+messages:any = [];
+  constructor() {
+    for (var i = 0; i<=50; i++)
+    {
+      this.messages.push({name:'new'})
+  }
 
-  constructor() {}
-
+}
 }
